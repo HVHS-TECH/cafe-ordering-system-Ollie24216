@@ -1,1 +1,42 @@
-console.log("Hello world!")
+let Username = "Ollie";
+let year = 2025;
+let age = 15;
+let pocketmoney = 3;
+let money = 2;
+
+let birthYear = year - age;
+let oldAge = age + 10;
+let halfMoney = money / 2;
+
+let OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+
+function start() {
+  
+}
+
+
+function displayWelcome(_name, _money) {
+  OUTPUT.innerHTML += "<p>Welcome to the page " + _name + "</p>";
+  OUTPUT.innerHTML += "<p>You have $" + _money + " in pocket money</p>";
+}
+
+
+function getFormInput() {
+  
+  let name = document.getElementById("nameField").value;
+  
+  
+  let enteredPocketmoney = Number(document.getElementById("pocketmoneyField").value);
+
+  
+  OUTPUT.innerHTML += "<p>Hello " + name + "</p>";
+  OUTPUT.innerHTML += "<p>You have $" + enteredPocketmoney + " money </p>";
+
+
+  if (enteredPocketmoney >= 4) {
+    OUTPUT.innerHTML += "<p>You can buy a chocolate bar!</p>";
+  } else {
+    OUTPUT.innerHTML += "<p>You can't afford the chocolate bar.</p>";
+  }
+}
