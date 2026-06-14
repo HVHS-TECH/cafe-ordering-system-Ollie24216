@@ -35,8 +35,8 @@ function getFormInput() {
 
 
   if (enteredPocketmoney >= 4) {
-    OUTPUT.innerHTML += "<p>!</p>";
+    OUTPUT.innerHTML += "<p>you can afford to buy the fries!</p>";
   } else {
-    OUTPUT.innerHTML += "<p>You can't afford the chocolate bar.</p>";
+    OUTPUT.innerHTML += "<p>You can't afford the fries .</p>";
   }
 }
