@@ -10,7 +10,7 @@ let halfMoney = money / 2;
 
 let OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-// 1. This runs automatically when the page loads
+
 function start() {
   displayWelcome(Username, pocketmoney);
 }
@@ -34,5 +34,5 @@ function getFormInput() {
   }
 }
 
-// 2. This tells the browser to trigger the start function on load
+
 window.onload = start;
