@@ -6,6 +6,7 @@ let money = 2;
 
 let birthYear = year - age;
 let oldAge = age + 10;
+
 let halfMoney = money / 2;
 
 let OUTPUT = document.getElementById("spaceForJavaScriptOutput");
