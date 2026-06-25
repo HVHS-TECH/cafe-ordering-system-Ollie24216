@@ -1,161 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Ollies Cafe</title>
-
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            background:#f5f0e6;
-            margin:0;
-        }
-
-        header{
-            background:#6f4e37;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
-
-        .container{
-            width:70%;
-            margin:auto;
-            background:white;
-            padding:20px;
-            margin-top:20px;
-            border-radius:10px;
-            box-shadow:0 0 10px gray;
-        }
-
-        .banner{
-            width:100%;
-            border-radius:10px;
-            margin-bottom:20px;
-        }
-
-        label{
-            display:block;
-            margin-top:15px;
-            font-weight:bold;
-        }
-
-        input, select, textarea{
-            width:100%;
-            padding:10px;
-            margin-top:5px;
-        }
-
-        .extras{
-            margin-top:10px;
-        }
-
-        button{
-            margin-top:20px;
-            padding:12px 20px;
-            background:#6f4e37;
-            color:white;
-            border:none;
-            cursor:pointer;
-            border-radius:5px;
-        }
-
-        button:hover{
-            background:#4b3222;
-        }
-
-        footer{
-            text-align:center;
-            padding:20px;
-            margin-top:20px;
-            color:#555;
-        }
-    </style>
+  <title>Ollies Cafe</title>
+  <meta charset="UTF-8">
 </head>
 
 <body>
 
-<header>
-    <h1>☕ Welcome to Ollies Cafe ☕</h1>
-    <p>Fresh Coffee • Delicious Food • Friendly Service</p>
-</header>
+<h1>Welcome to Ollies Cafe</h1>
 
-<div class="container">
+<p>Place your order and enter the amount of money you have below</p>
 
-    <!-- Cafe Image -->
-    <img src="images/cafe-banner.jpg" alt="Ollies Cafe" class="banner">
+<label for="nameField">Order:</label>
+<input type="text" id="nameField">
 
-    <h2>Place Your Order</h2>
+<label for="pocketmoneyField">Amount of money:</label>
+<input type="text" id="pocketmoneyField">
 
-    <label>Name</label>
-    <input type="text" id="customerName">
+<input type="submit" onclick="getFormInput()">
 
-    <label>Food or Drink</label>
-    <input type="text" id="order">
-
-    <label>Drink Size</label>
-    <select id="size">
-        <option>Small</option>
-        <option>Medium</option>
-        <option>Large</option>
-    </select>
-
-    <label>Milk Type</label>
-    <select id="milk">
-        <option>Full Cream</option>
-        <option>Trim</option>
-        <option>Almond</option>
-        <option>Soy</option>
-        <option>Oat</option>
-    </select>
-
-    <label>Sugar</label>
-    <select id="sugar">
-        <option>None</option>
-        <option>1 Sugar</option>
-        <option>2 Sugars</option>
-        <option>3 Sugars</option>
-    </select>
-
-    <label>Extras</label>
-
-    <div class="extras">
-        <input type="checkbox"> Extra Shot<br>
-        <input type="checkbox"> Caramel Syrup<br>
-        <input type="checkbox"> Vanilla Syrup<br>
-        <input type="checkbox"> Whipped Cream
-    </div>
-
-    <label>Dine In or Takeaway</label>
-    <select>
-        <option>Dine In</option>
-        <option>Takeaway</option>
-    </select>
-
-    <label>Table Number (if dining in)</label>
-    <input type="number">
-
-    <label>Phone Number</label>
-    <input type="tel">
-
-    <label>Amount of Money ($)</label>
-    <input type="number" id="money">
-
-    <label>Special Instructions</label>
-    <textarea rows="4" placeholder="No onions, extra hot, etc."></textarea>
-
-    <button onclick="getFormInput()">Submit Order</button>
-
-    <div id="spaceForJavaScriptOutput"></div>
-
-</div>
-
-<footer>
-    <p>Thank you for choosing Ollies Cafe!</p>
-</footer>
+<div id="spaceForJavaScriptOutput"></div>
 
 <script src="../t12_conditionals.js"></script>
 
 </body>
 </html>
-Layout ideas
