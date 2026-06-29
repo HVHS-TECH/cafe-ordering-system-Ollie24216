@@ -33,6 +33,3 @@ function getFormInput() {
     OUTPUT.innerHTML += "<p>You can't afford the fries.</p>";
   }
 }
-
-
-window.onload = start;

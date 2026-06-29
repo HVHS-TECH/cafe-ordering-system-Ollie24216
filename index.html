@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Ollies Cafe</title>
-  <meta charset="UTF-8">
+    <title>Ollies Cafe</title>
+    <meta charset="UTF-8">
 </head>
-
 <body>
+    <h1>Welcome to Ollies Cafe</h1>
+    <p>Place your order and enter the amount of money you have below</p>
+    
+    <form onsubmit="getFormInput(); return false;">
+        <label for="nameField">Order:</label>
+        <input type="text" id="nameField"> 
+        
+        <label for="pocketmoneyField">Amount of money:</label>
+        <input type="text" id="pocketmoneyField"> 
+        
+        <button type="submit">Place Order</button>
+    </form>
 
-<h1>Welcome to Ollies Cafe</h1>
-
-<p>Place your order and enter the amount of money you have below</p>
-
-<label for="nameField">Order:</label>
-<input type="text" id="nameField">
-
-<label for="pocketmoneyField">Amount of money:</label>
-<input type="text" id="pocketmoneyField">
-
-<input type="submit" onclick="getFormInput()">
-
-<div id="spaceForJavaScriptOutput"></div>
-
-<script src="../t12_conditionals.js"></script>
-
+    <div id="spaceForJavaScriptOutput"></div>
+    
+    <script src="../t12_conditionals.js"></script>
 </body>
 </html>
