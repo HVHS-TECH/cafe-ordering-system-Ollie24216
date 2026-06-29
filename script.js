@@ -1,35 +1,33 @@
 let Username = "Ollie";
-let year = 2025;
-let age = 15;
 let pocketmoney = 3;
-let money = 2;
-
-let birthYear = year - age;
-let oldAge = age + 10;
-let halfMoney = money / 2;
 
 let OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-
 function start() {
-  displayWelcome(Username, pocketmoney);
+    displayWelcome(Username, pocketmoney);
 }
 
 function displayWelcome(_name, _money) {
-  OUTPUT.innerHTML += "<p>Welcome to the page " + _name + "</p>";
-  OUTPUT.innerHTML += "<p>You have $" + _money + " in pocket money</p>";
+    OUTPUT.innerHTML = "<p>Welcome to Ollie's Cafe, " + _name + "!</p>";
+    OUTPUT.innerHTML += "<p>You have $" + _money + " in pocket money.</p>";
 }
 
 function getFormInput() {
-  let name = document.getElementById("nameField").value;
-  let enteredPocketmoney = Number(document.getElementById("pocketmoneyField").value);
 
-  OUTPUT.innerHTML += "<p>Hello customer " + name + "</p>"; // Fixed to actually use the name variable
-  OUTPUT.innerHTML += "<p>You have $" + enteredPocketmoney + " money </p>";
+    let customerName = document.getElementById("customerName").value;
+    let order = document.getElementById("nameField").value;
+    let enteredPocketmoney = Number(document.getElementById("pocketmoneyField").value);
 
-  if (enteredPocketmoney >= 4) {
-    OUTPUT.innerHTML += "<p>You can afford to buy the fries!</p>";
-  } else {
-    OUTPUT.innerHTML += "<p>You can't afford the fries.</p>";
-  }
+    OUTPUT.innerHTML = "";
+
+    OUTPUT.innerHTML += "<h2>Order Summary</h2>";
+    OUTPUT.innerHTML += "<p><strong>Name:</strong> " + customerName + "</p>";
+    OUTPUT.innerHTML += "<p><strong>Order:</strong> " + order + "</p>";
+    OUTPUT.innerHTML += "<p><strong>Money:</strong> $" + enteredPocketmoney + "</p>";
+
+    if (enteredPocketmoney >= 4) {
+        OUTPUT.innerHTML += "<p>✅ You can afford the fries!</p>";
+    } else {
+        OUTPUT.innerHTML += "<p>❌ You can't afford the fries.</p>";
+    }
 }
