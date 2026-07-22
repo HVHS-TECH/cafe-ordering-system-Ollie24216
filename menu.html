@@ -82,6 +82,29 @@
   <input type="submit" onClick=getFormInput()>
 </form>
 
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+
+  <tbody id="ItemTableBody"></tbody>
+</table>
+
+<br>
+
+<label>Amount Paid: </label>
+<input type="number" id="AmountPaid">
+
+<button onclick="calculateTotal()">Calculate Total & Change</button>
+
+<p id="TotalOutput"></p>
+
+
   <div id="spaceForJavaScriptOutput">
 
    
