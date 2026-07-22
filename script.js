@@ -1,51 +1,21 @@
-let OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+function start() { }
 
-function getFormInput(){
+let ItemArray = ["MILK", "Chocolate", "sausages", "CARROTS"]
 
-let customer = document.getElementById("customerName").value;
+function getFormInput() {
 
-let food = document.getElementById("foodChoice").value;
+    let Item = (document.getElementById("ShoppingItem").value);
+    let OUTPUT = document.getElementById("OUTPUT");
 
-let parts = food.split("|");
+    ItemArray.push(Item);
 
-let item = parts[0];
+    OUTPUT.innerHTML = "";
 
-let price = Number(parts[1]);
+    for (let i = 0; i < ItemArray.length; i++) {
 
-let money = Number(document.getElementById("pocketmoneyField").value);
+   
 
-let change = money - price;
 
-OUTPUT.innerHTML = `
-<div class="receipt">
 
-<h2>🧾 Order Receipt</h2>
-
-<p><strong>Name:</strong> ${customer}</p>
-
-<p><strong>Food:</strong> ${item}</p>
-
-<p><strong>Price:</strong> $${price}</p>
-
-<p><strong>Your Money:</strong> $${money}</p>
-`;
-
-if(money >= price){
-
-OUTPUT.innerHTML += `
-<p class="success">✅ Order Approved!</p>
-
-<p class="change">Your change is <strong>$${change}</strong></p>
-`;
-
-}else{
-
-OUTPUT.innerHTML += `
-<p class="fail">❌ You need $${price-money} more.</p>
-`;
-
- }
-
-OUTPUT.innerHTML += "</div>";
-
-}
+    
+    OUTPUT.innerHTML += "<p>" + ItemArray[i] + " you have added this item to the list" + "</p>";    
