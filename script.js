@@ -7,7 +7,7 @@ let ItemArray = [
     { name: "Hotdog", price: 5 },
     { name: "Soft Drink", price: 3 },
     { name: "Milkshake", price: 7 },
-]
+];
 
 function getFormInput() {
 
