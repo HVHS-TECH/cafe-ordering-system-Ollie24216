@@ -1,5 +1,5 @@
 function start() { }
-updateTable();
+
 
 let ItemArray = [
     { name: "Burger", price: 8 },
@@ -9,6 +9,8 @@ let ItemArray = [
     { name: "Soft Drink", price: 3 },
     { name: "Milkshake", price: 7 },
 ];
+
+updateTable();
 
 function updateTable() {
     let table = document.getElementById("ItemTableBody");
