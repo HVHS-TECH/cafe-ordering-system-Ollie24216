@@ -1,6 +1,6 @@
 let OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-function getFormInput() {
+function getFormInput(){
 
     let customerName = document.getElementById("customerName").value;
     let order = document.getElementById("nameField").value;
@@ -8,14 +8,17 @@ function getFormInput() {
 
     OUTPUT.innerHTML = `
         <h2>Order Summary</h2>
-        <p><b>Name:</b> ${customerName}</p>
-        <p><b>Order:</b> ${order}</p>
-        <p><b>Money:</b> ${money}</p>
+
+        <p><strong>Name:</strong> ${customerName}</p>
+
+        <p><strong>Order:</strong> ${order}</p>
+
+        <p><strong>Money:</strong> $${money}</p>
     `;
 
-    if (money >= 4) {
-        OUTPUT.innerHTML += "<p>You can afford the fries!</p>";
-    } else {
+    if(money >= 4){
+        OUTPUT.innerHTML += "<p>You can afford the fries.</p>";
+    }else{
         OUTPUT.innerHTML += "<p>You can't afford the fries.</p>";
     }
 }
