@@ -59,6 +59,23 @@
   <input type="text" id="nameField" name="customerName">
 </form>
 
+<table border=""1">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+</table>
+
+<br>
+
+<label>Amount Paid: </label>
+<input type="number" id="AmountPaid">
+<button onclick="calculateTotal()"> Calculate Total & Change</button>
+<p id="TotalOutput"
+    
 <form onsubmit="return false;">
   <label for="formName">Cash Paid:</label>
   <input type="number" min=0 max = 1000 "cashField" name="cashPaid">
