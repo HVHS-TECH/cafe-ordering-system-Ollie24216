@@ -1,6 +1,6 @@
 function start() { }
 
-let ItemArray = ["MILK", "Chocolate", "sausages", "CARROTS"]
+let ItemArray = ["Burger", "Fries", "Pizza Slice", "Hotdog", "Soft Drink", "Milkshake"]
 
 function getFormInput() {
 
