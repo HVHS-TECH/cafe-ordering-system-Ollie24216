@@ -1,34 +1,64 @@
-<p>Ollies caffe</p>
+<!DOCTYPE html>
+<html>
 
+<head>
+    <title>Ollie's Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>
+<h1>Ollie's Café</h1>
+
+<nav>
+<a href="index.html">Home</a><a href="menu.html">Menu</a>
+</nav>
+</header>
+
+<main>
+
+<section class="welcome">
+    <h2>Welcome to Ollie's Café</h2>
+    <p>Order your favourite food below.</p>
+</section>
+
+<section class="orderBox">
 
 <form onsubmit="getFormInput(); return false;">
 
+<label>Your Name</label><br>
+<input type="text" id="customerName" required>
 
-    <label>Name:</label>
-    <input type="text" id="customerName">
+<br><br>
 
-    <br><br>
+<label>Food Item</label><br>
+<input type="text" id="nameField" required>
 
-    <label>Order:</label>
-    <input type="text" id="nameField">
+<br><br>
 
-    <br><br>
+<label>Money Available ($)</label><br>
+<input type="number" id="pocketmoneyField" required>
 
-    <label>Amount of money:</label>
-    <input type="number" id="pocketmoneyField">
+<br><br>
 
-    <br><br>
-
-    <button type="submit">Place Order</button>
-
-
-    <img src="https://www.britannica.com/topic/French-fries" alt="fries" width="600" height="400">
+<button type="submit">Place Order</button>
 
 </form>
 
+</section>
+
 <div id="spaceForJavaScriptOutput"></div>
+
+</main>
+
+<footer>
+    <p>Ollie's Café © 2026</p>
+</footer>
 
 <script src="script.js"></script>
 
+</body>
+
+</html>
 
