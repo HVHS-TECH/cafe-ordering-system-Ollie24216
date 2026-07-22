@@ -1,6 +1,13 @@
 function start() { }
 
-let ItemArray = ["Burger", "Fries", "Pizza Slice", "Hotdog", "Soft Drink", "Milkshake"]
+let ItemArray = [
+    { name: "Burger", price: 8 },
+    { name: "Fries", price: 4 },
+    { name: "Pizza Slice", price: 6 },
+    { name: "Hotdog", price: 5 },
+    { name: "Soft Drink", price: 3 },
+    { name: "Milkshake", price: 7 },
+]
 
 function getFormInput() {
 
