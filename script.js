@@ -17,15 +17,15 @@ function updateTable() {
     for (let i = 0; i < ItemArray.length; i++) {
         table.innerHTML += `
             <tr>
-                <td>${ItemArray{i}.name}</td>
-                <td>${ItemArrray{i}.price}</td>
-                <td><input type="number" id="qty${i}" value="0" min="0"</td>
+                <td>${ItemArray[i].name}</td>
+                <td>${ItemArray[i].price}</td>
+                <td><input> type="number" id="qty${i}" value="0" min="0"</td>
                 </tr>
                 ;
     }
 }
     
-    updateTable();
+                                                                                                              
 
     function calculateTotal() {
     let total = 0;
@@ -47,7 +47,7 @@ function updateTable() {
     `;
 }
 
-}
+
 function getFormInput() {
 
     let Item = (document.getElementById("ShoppingItem").value);
