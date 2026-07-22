@@ -7,7 +7,9 @@ function getFormInput(){
     let money = Number(document.getElementById("pocketmoneyField").value);
 
     OUTPUT.innerHTML = `
-        <h2>Order Summary</h2>
+        <div class="summaryCard">
+
+        <h2>🍔 Order Summary</h2>
 
         <p><strong>Name:</strong> ${customerName}</p>
 
@@ -17,8 +19,18 @@ function getFormInput(){
     `;
 
     if(money >= 4){
-        OUTPUT.innerHTML += "<p>You can afford the fries.</p>";
+        OUTPUT.innerHTML += `
+            <p class="success">
+            ✅ You can afford the fries!
+            </p>
+        `;
     }else{
-        OUTPUT.innerHTML += "<p>You can't afford the fries.</p>";
+        OUTPUT.innerHTML += `
+            <p class="fail">
+            ❌ You can't afford the fries.
+            </p>
+        `;
     }
+
+    OUTPUT.innerHTML += "</div>";
 }
