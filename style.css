@@ -65,7 +65,7 @@ background:#fff0cc;
 
 .foodCard img{
 width:100%;
-height:180px;
+height:100px;
 object-fit:cover;
 border-radius:10px;
 }
