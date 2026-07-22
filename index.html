@@ -1,12 +1,59 @@
 <main>
 
 <section class="hero">
-    <div class="hero-text">
-        <h2>Welcome to Ollie's Café</h2>
-        <p>Fresh burgers, crispy fries and refreshing drinks made every day.</p>
-    </div>
 
-    <img src="images/burger.jpg" alt="Burger and Fries">
+<h2>🍔 Welcome to Ollie's Café 🍟</h2>
+
+<p>Fresh food • Cold drinks • Great prices</p>
+
+<img src="images/cafe-banner.jpg" alt="Cafe Food">
+
+</section>
+
+<section class="menu">
+
+<h2>Today's Menu</h2>
+
+<div class="foodGrid">
+
+<div class="foodCard">
+<img src="images/burger.jpg">
+<h3>Burger</h3>
+<p>$8</p>
+</div>
+
+<div class="foodCard">
+<img src="images/fries.jpg">
+<h3>Fries</h3>
+<p>$4</p>
+</div>
+
+<div class="foodCard">
+<img src="images/pizza.jpg">
+<h3>Pizza Slice</h3>
+<p>$6</p>
+</div>
+
+<div class="foodCard">
+<img src="images/hotdog.jpg">
+<h3>Hot Dog</h3>
+<p>$5</p>
+</div>
+
+<div class="foodCard">
+<img src="images/drink.jpg">
+<h3>Soft Drink</h3>
+<p>$3</p>
+</div>
+
+<div class="foodCard">
+<img src="images/milkshake.jpg">
+<h3>Milkshake</h3>
+<p>$7</p>
+</div>
+
+</div>
+
 </section>
 
 <section class="orderBox">
@@ -20,17 +67,28 @@
 
 <br><br>
 
-<label>Food Item</label><br>
-<input type="text" id="nameField" required>
+<label>Select Food</label><br>
+
+<select id="foodChoice">
+
+<option value="Burger|8">🍔 Burger - $8</option>
+<option value="Fries|4">🍟 Fries - $4</option>
+<option value="Pizza Slice|6">🍕 Pizza Slice - $6</option>
+<option value="Hot Dog|5">🌭 Hot Dog - $5</option>
+<option value="Soft Drink|3">🥤 Soft Drink - $3</option>
+<option value="Milkshake|7">🥛 Milkshake - $7</option>
+
+</select>
 
 <br><br>
 
-<label>Money Available ($)</label><br>
+<label>Your Money</label><br>
+
 <input type="number" id="pocketmoneyField" required>
 
 <br><br>
 
-<button type="submit">Place Order</button>
+<button>Order Now</button>
 
 </form>
 
