@@ -24,7 +24,7 @@ function updateTable() {
                 <td><input type="number" id="qty${i}" value="0" min="0"></td>
 
                 </tr>
-                
+                 `;
     }
 }
     
