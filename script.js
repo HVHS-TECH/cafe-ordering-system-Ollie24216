@@ -22,6 +22,7 @@ function updateTable() {
                 <td>${ItemArray[i].name}</td>
                 <td>${ItemArray[i].price}</td>
                 <td><input type="number" id="qty${i}" value="0" min="0"></td>
+
                 </tr>
                 
     }
