@@ -2,35 +2,50 @@ let OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 function getFormInput(){
 
-    let customerName = document.getElementById("customerName").value;
-    let order = document.getElementById("nameField").value;
-    let money = Number(document.getElementById("pocketmoneyField").value);
+let customer = document.getElementById("customerName").value;
 
-    OUTPUT.innerHTML = `
-        <div class="summaryCard">
+let food = document.getElementById("foodChoice").value;
 
-        <h2>🍔 Order Summary</h2>
+let parts = food.split("|");
 
-        <p><strong>Name:</strong> ${customerName}</p>
+let item = parts[0];
 
-        <p><strong>Order:</strong> ${order}</p>
+let price = Number(parts[1]);
 
-        <p><strong>Money:</strong> $${money}</p>
-    `;
+let money = Number(document.getElementById("pocketmoneyField").value);
 
-    if(money >= 4){
-        OUTPUT.innerHTML += `
-            <p class="success">
-            ✅ You can afford the fries!
-            </p>
-        `;
-    }else{
-        OUTPUT.innerHTML += `
-            <p class="fail">
-            ❌ You can't afford the fries.
-            </p>
-        `;
-    }
+let change = money - price;
 
-    OUTPUT.innerHTML += "</div>";
+OUTPUT.innerHTML = `
+<div class="receipt">
+
+<h2>🧾 Order Receipt</h2>
+
+<p><strong>Name:</strong> ${customer}</p>
+
+<p><strong>Food:</strong> ${item}</p>
+
+<p><strong>Price:</strong> $${price}</p>
+
+<p><strong>Your Money:</strong> $${money}</p>
+`;
+
+if(money >= price){
+
+OUTPUT.innerHTML += `
+<p class="success">✅ Order Approved!</p>
+
+<p class="change">Your change is <strong>$${change}</strong></p>
+`;
+
+}else{
+
+OUTPUT.innerHTML += `
+<p class="fail">❌ You need $${price-money} more.</p>
+`;
+
+}
+
+OUTPUT.innerHTML += "</div>";
+
 }
