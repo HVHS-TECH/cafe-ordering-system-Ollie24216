@@ -44,7 +44,7 @@ OUTPUT.innerHTML += `
 <p class="fail">❌ You need $${price-money} more.</p>
 `;
 
-}
+ }
 
 OUTPUT.innerHTML += "</div>";
 
