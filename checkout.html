@@ -1,30 +1,80 @@
 <!DOCTYPE html>
 <body class="checkout">
 <head> 
-    <meta charset="UTF-8">
-    <main>
+<form onsubmit="return false;">
+  <label for="formName">Customer Name:</label>
+  <input type="text" id="nameField" name="customerName">
+</form>
 
-<section class="hero">
+<table border=""1">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+</table>
 
-<h2>🍔 Welcome to the Cafe 🍟</h2>
+<br>
 
-<p>Fantastic food at great prices!</p>
+<label>Amount Paid: </label>
+<input type="number" id="AmountPaid">
+<button onclick="calculateTotal()"> Calculate Total & Change</button>
+<p id="TotalOutput"
+    
+<form onsubmit="return false;">
+  <label for="formName">Cash Paid:</label>
+  <input type="number" min=0 max = 1000 "cashField" name="cashPaid">
+  <input type="submit" onClick=getFormInput()>
+</form>
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNqrhNu1V-TB3Q-YBR5N8bl8vfsYXZCku2BpnfV9YmnQHZJ44NliKj7Agh&s=10" alt="Cafe Food">
 
-</section>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
 
-</head>
+  <tbody id="ItemTableBody"></tbody>
+</table>
+
+<br>
+
+<label>Amount Paid: </label>
+<input type="number" id="AmountPaid">
+
+<button onclick="calculateTotal()">Calculate Total & Change</button>
+
+<p id="TotalOutput"></p>
+
+
+  <div id="spaceForJavaScriptOutput">
+
+   
+
+
+  </div>
+
+
+  <script src="../script.js"></script>
+
+  </head>
 <body>
 
     <div class="container">
-        <h1>Ollies Cafe</h1>
-        <p>Click below for ordering</p>
+  
 
-        <a href="menu.html">
-            <button>View Menu</button>
+        <a href="index.html">
+            <button>Return to home</button>
         </a>
     </div>
+</body>
+<html>
+
 </body>
 <html>
     </body>
