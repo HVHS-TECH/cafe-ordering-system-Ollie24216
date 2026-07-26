@@ -81,7 +81,7 @@ output.innerHTML = `
 <p>Total Cost: $${total}</p>
 <p>Amount Paid: $${paid}</p>
 `;
-
+// This displays a warning if not enough money has been paid
 receiptOutput.innerHTML = `
 <h2>Ollies Cafe Receipt</h2>
 <p><strong>Customer:</strong> ${customer}</p>
@@ -94,7 +94,7 @@ ${receipt}
 
 return;
 }
-
+// This works out the change if there is any
 let change = paid - total;
 
 output.innerHTML = `
@@ -102,7 +102,7 @@ output.innerHTML = `
 <p>Amount Paid: $${paid}</p>
 <p>Change: $${change}</p>
 `;
-
+// This 
 receiptOutput.innerHTML = `
 <h2>Ollies Cafe Receipt</h2>
 
