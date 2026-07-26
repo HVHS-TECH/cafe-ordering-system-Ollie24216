@@ -124,6 +124,7 @@ ${receipt}
 `;
 }
 
+/*
 function getFormInput() {
 // this is displaying the receipt and updates the array. 
 let Item = (document.getElementById("ShoppingItem").value);
@@ -135,7 +136,7 @@ OUTPUT.innerHTML = "";
 for (let i = 0; i < ItemArray.length; i++) {
 OUTPUT.innerHTML += "<p>" + ItemArray[i].name + "$" + ItemArray[i].price + " you have added this item to the list" + "</p>";
    
+*/
 
-}
 updateTable();  
-}
+
