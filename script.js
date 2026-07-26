@@ -123,7 +123,7 @@ ${receipt}
 <p>Thank you for your order!</p>
 `;
 }
-
+// this was leftover code from i was trying to add items to the menu but the array became a table and i couldnt get the array working 
 /*
 function getFormInput() {
 // this is displaying the receipt and updates the array. 
