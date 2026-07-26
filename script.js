@@ -102,7 +102,7 @@ output.innerHTML = `
 <p>Amount Paid: $${paid}</p>
 <p>Change: $${change}</p>
 `;
-// This 
+// This code sets the format for the receipts 
 receiptOutput.innerHTML = `
 <h2>Ollies Cafe Receipt</h2>
 
@@ -125,7 +125,7 @@ ${receipt}
 }
 
 function getFormInput() {
-
+// this is displaying the receipt and updates the array. 
 let Item = (document.getElementById("ShoppingItem").value);
 let OUTPUT = document.getElementById("OUTPUT");
 ItemArray.push({ name: Item, price: 0});
