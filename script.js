@@ -49,77 +49,76 @@ function calculateTotal() {
         }
     }
 
-    let paid = Number(document.getElementById("AmountPaid").value);
+let paid = Number(document.getElementById("AmountPaid").value);
 
-    let customer = document.getElementById("customerName").value;
+let customer = document.getElementById("CustomerName").value;
 
-    let output = document.getElementById("TotalOutput");
+let output = document.getElementById("TotalOutput");
 
-    let receiptOutput = document.getElementById("ReceiptOutput");
+let receiptOutput = document.getElementById("ReceiptOutput");
 
-    if (paid < total) {
+if (paid < total) {
 
-        output.innerHTML = `
-            <h3>Insufficient Funds</h3>
-            <p>Total Cost: $${total}</p>
-            <p>Amount Paid: $${paid}</p>
-        `;
+output.innerHTML = `
+<h3>Insufficient Funds</h3>
+<p>Total Cost: $${total}</p>
+<p>Amount Paid: $${paid}</p>
+`;
 
-        receiptOutput.innerHTML = `
-            <h2>DT Cafe Receipt</h2>
-            <p><strong>Customer:</strong> ${customer}</p>
-            ${receipt}
-            <hr>
-            <p>Total: $${total}</p>
-            <p>Paid: $${paid}</p>
-            <p style="color:red;"><strong>Insufficient Funds</strong></p>
-        `;
+receiptOutput.innerHTML = `
+<h2>DT Cafe Receipt</h2>
+<p><strong>Customer:</strong> ${customer}</p>
+${receipt}
+<hr>
+<p>Total: $${total}</p>
+<p>Paid: $${paid}</p>
+<p style="color:red;"><strong>Insufficient Funds</strong></p>
+`;
 
-        return;
-    }
+return;
+}
 
-    let change = paid - total;
+let change = paid - total;
 
-    output.innerHTML = `
-        <p>Total Cost: $${total}</p>
-        <p>Amount Paid: $${paid}</p>
-        <p>Change: $${change}</p>
-    `;
+output.innerHTML = `
+<p>Total Cost: $${total}</p>
+<p>Amount Paid: $${paid}</p>
+<p>Change: $${change}</p>
+`;
 
-    receiptOutput.innerHTML = `
-        <h2>DT Cafe Receipt</h2>
+receiptOutput.innerHTML = `
+<h2>DT Cafe Receipt</h2>
 
-        <p><strong>Customer:</strong> ${customer}</p>
+<p><strong>Customer:</strong> ${customer}</p>
 
-        <hr>
+<hr>
 
-        ${receipt}
+${receipt}
 
-        <hr>
+<hr>
 
-        <p><strong>Total:</strong> $${total}</p>
+<p><strong>Total:</strong> $${total}</p>
 
-        <p><strong>Paid:</strong> $${paid}</p>
+<p><strong>Paid:</strong> $${paid}</p>
 
-        <p><strong>Change:</strong> $${change}</p>
+<p><strong>Change:</strong> $${change}</p>
 
-        <p>Thank you for your order!</p>
-    `;
+<p>Thank you for your order!</p>
+`;
 }
 
 function getFormInput() {
 
-    let Item = (document.getElementById("ShoppingItem").value);
-    let OUTPUT = document.getElementById("OUTPUT");
+let Item = (document.getElementById("ShoppingItem").value);
+let OUTPUT = document.getElementById("OUTPUT");
+ItemArray.push({ name: Item, price: 0});
 
-    ItemArray.push({ name: Item, price: 0});
+OUTPUT.innerHTML = "";
 
-    OUTPUT.innerHTML = "";
-
-    for (let i = 0; i < ItemArray.length; i++) {
-    OUTPUT.innerHTML += "<p>" + ItemArray[i].name + "$" + ItemArray[i].price + " you have added this item to the list" + "</p>";
+for (let i = 0; i < ItemArray.length; i++) {
+OUTPUT.innerHTML += "<p>" + ItemArray[i].name + "$" + ItemArray[i].price + " you have added this item to the list" + "</p>";
    
 
-  }
- updateTable();  
+}
+updateTable();  
 }
