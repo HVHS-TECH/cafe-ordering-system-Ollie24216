@@ -1,3 +1,7 @@
+
+/*I used some ai to get the code working
+The parts of the page are broken into items like menu. Food card. Food grid. These are created in the HTML
+and the CSS file aplies a format*/
 .home {
     background-color: #4da6ff;
 }
@@ -40,7 +44,7 @@
     object-fit:cover;
     border-radius:10px;
 }
-
+/* image hover */
 .foodCard:hover{
     transform:scale(1.03);
     transition:0.3s;

@@ -2,68 +2,68 @@ function start() { }
 
 
 let ItemArray = [
-    { name: "Burger", price: 8 },
-    { name: "Fries", price: 4 },
-    { name: "Pizza Slice", price: 6 },
-    { name: "Hotdog", price: 5 },
-    { name: "Soft Drink", price: 3 },
-    { name: "Milkshake", price: 7 },
+{ name: "Burger", price: 8 },
+{ name: "Fries", price: 4 },
+{ name: "Pizza Slice", price: 6 },
+{ name: "Hotdog", price: 5 },
+{ name: "Soft Drink", price: 3 },
+{ name: "Milkshake", price: 7 },
 ];
 
 updateTable();
 
 function updateTable() {
 
-    let table = document.getElementById("ItemTableBody");
+let table = document.getElementById("ItemTableBody");
 
     // Stops errors on pages without the checkout table
-    if (!table) {
-        return;
-    }
+if (!table) {
+return;
+}
 
-    table.innerHTML = "";
+table.innerHTML = "";
 
-    for (let i = 0; i < ItemArray.length; i++) {
+for (let i = 0; i < ItemArray.length; i++) {
 
-        table.innerHTML += `
-            <tr>
-                <td>${ItemArray[i].name}</td>
-                <td>$${ItemArray[i].price}</td>
-                <td>
-                    <input type="number" id="qty${i}" value="0" min="0">
-                </td>
-            </tr>
-        `;
-    }
+table.innerHTML += `
+<tr>
+<td>${ItemArray[i].name}</td>
+<td>$${ItemArray[i].price}</td>
+<td>
+<input type="number" id="qty${i}" value="0" min="0">
+</td>
+</tr>
+`;
+}
 }
                                                                                                               
 function calculateTotal() {
 
-    let total = 0;
+let total = 0;
 
-    let receipt = "";
+let receipt = "";
 
-    for (let i = 0; i < ItemArray.length; i++) {
+for (let i = 0; i < ItemArray.length; i++) {
 
-       let qtyBox = document.getElementById("qty" + i);
+let qtyBox = document.getElementById("qty" + i);
 
 if (!qtyBox) {
-    continue;
+continue;
 }
 
 let qty = Number(qtyBox.value);
 
-        if (qty > 0) {
+if (qty > 0) {
 
-            let cost = qty * ItemArray[i].price;
+let cost = qty * ItemArray[i].price;
 
-            total += cost;
+ total += cost;
 
-            receipt += `
-            <p>${ItemArray[i].name} x ${qty} = $${cost}</p>
-            `;
-        }
-    }
+receipt += `
+<p>${ItemArray[i].name} x ${qty} = $${cost}</p>
+`;
+}
+}
 
 let paid = Number(document.getElementById("AmountPaid").value);
 
