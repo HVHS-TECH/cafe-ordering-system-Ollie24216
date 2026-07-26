@@ -13,15 +13,25 @@ let ItemArray = [
 updateTable();
 
 function updateTable() {
+
     let table = document.getElementById("ItemTableBody");
+
+    // Stops errors on pages without the checkout table
+    if (!table) {
+        return;
+    }
+
     table.innerHTML = "";
 
     for (let i = 0; i < ItemArray.length; i++) {
+
         table.innerHTML += `
             <tr>
                 <td>${ItemArray[i].name}</td>
                 <td>$${ItemArray[i].price}</td>
-                <td><input type="number" id="qty${i}" value="0" min="0"></td>
+                <td>
+                    <input type="number" id="qty${i}" value="0" min="0">
+                </td>
             </tr>
         `;
     }
