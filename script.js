@@ -45,7 +45,13 @@ function calculateTotal() {
 
     for (let i = 0; i < ItemArray.length; i++) {
 
-        let qty = Number(document.getElementById("qty" + i).value);
+       let qtyBox = document.getElementById("qty" + i);
+
+if (!qtyBox) {
+    continue;
+}
+
+let qty = Number(qtyBox.value);
 
         if (qty > 0) {
 
