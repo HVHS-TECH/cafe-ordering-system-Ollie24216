@@ -1,6 +1,6 @@
 function start() { }
 
-
+// This is an array with all the items on the menu list and prices you can add or delete multipul items.
 let ItemArray = [
 { name: "Burger", price: 8 },
 { name: "Fries", price: 4 },
@@ -22,7 +22,7 @@ return;
 }
 
 table.innerHTML = "";
-
+// this bit of code makes sure the table is the right length
 for (let i = 0; i < ItemArray.length; i++) {
 
 table.innerHTML += `
