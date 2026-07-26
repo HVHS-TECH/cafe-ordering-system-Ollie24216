@@ -31,6 +31,7 @@ table.innerHTML += `
 <td>$${ItemArray[i].price}</td>
 <td>
 <input type="number" id="qty${i}" value="0" min="0" max="50">
+
 </td>
 </tr>
 `;
