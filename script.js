@@ -24,13 +24,13 @@ return;
 table.innerHTML = "";
 // this bit of code makes sure the table is the right length
 for (let i = 0; i < ItemArray.length; i++) {
-
+// this displays the table amount and the min + max input quantity 
 table.innerHTML += `
 <tr>
 <td>${ItemArray[i].name}</td>
 <td>$${ItemArray[i].price}</td>
 <td>
-<input type="number" id="qty${i}" value="0" min="0">
+<input type="number" id="qty${i}" value="0" min="0" max="50">
 </td>
 </tr>
 `;
