@@ -1,7 +1,7 @@
 
 /*I used some ai to get the code working
 The parts of the page are broken into items like menu. Food card. Food grid. These are created in the HTML
-and the CSS file aplies a format*/
+and the CSS file aplies a format like a colour a size or a hover animation. I created multipul CSS files for each HTML page.*/
 .home {
     background-color: #4da6ff;
 }
