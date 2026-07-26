@@ -66,7 +66,7 @@ output.innerHTML = `
 `;
 
 receiptOutput.innerHTML = `
-<h2>DT Cafe Receipt</h2>
+<h2>Ollies Cafe Receipt</h2>
 <p><strong>Customer:</strong> ${customer}</p>
 ${receipt}
 <hr>
