@@ -37,7 +37,7 @@ table.innerHTML += `
 `;
 }
 }
-                                                                                                              
+// this code runs the calculations to work out the total cost, change, and make a receipts which is an array                                                                                                              
 function calculateTotal() {
 
 let total = 0;
@@ -65,7 +65,7 @@ receipt += `
 `;
 }
 }
-
+// 
 let paid = Number(document.getElementById("AmountPaid").value);
 
 let customer = document.getElementById("CustomerName").value;
@@ -77,7 +77,7 @@ let receiptOutput = document.getElementById("ReceiptOutput");
 if (paid < total) {
 
 output.innerHTML = `
-<h3>Insufficient Funds</h3>
+<h3>NOT ENOUGH CASH!!</h3>
 <p>Total Cost: $${total}</p>
 <p>Amount Paid: $${paid}</p>
 `;
@@ -89,7 +89,7 @@ ${receipt}
 <hr>
 <p>Total: $${total}</p>
 <p>Paid: $${paid}</p>
-<p style="color:red;"><strong>Insufficient Funds</strong></p>
+<p style="color:red;"><strong>NOT ENOUGH CASH!!</strong></p>
 `;
 
 return;
